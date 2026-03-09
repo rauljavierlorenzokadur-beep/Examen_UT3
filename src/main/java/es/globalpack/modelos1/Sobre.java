@@ -9,21 +9,28 @@ package es.globalpack.modelos1;
  * @author aytha
  */
 public class Sobre extends Envio {
+
     private boolean esAcolchado;
-    
-    public Sobre(String idSeguimiento, double peso, Direccion direccion, booleand esAcolchado){
-            super(idSeguimiento, peso, direccion);
-            this.esAcolchado = esAcolchado;
-    }            
-    
-    @Override 
-    public double calcularPrecioFinal(){
+
+    public Sobre(String idSeguimiento, double peso, Direccion direccion, boolean esAcolchado) {
+        super(idSeguimiento, peso, direccion);
+        this.esAcolchado = esAcolchado;
+    }
+
+    @Override
+    public double calcularPrecioFinal() {
+
         double precio = 2.0;
-        
-        if (esAcolchado){
-            precio += 1.0;
+
+        if (esAcolchado) {
+            precio += 1.5;
         }
-        if (direccion.getCiudad().equalsIgnoreCase("Las palmas")){
+
+        if (direccion.getCiudad().equalsIgnoreCase("Las Palmas")) {
             precio -= 0.5;
+        }
+
+        return precio;
     }
 }
+

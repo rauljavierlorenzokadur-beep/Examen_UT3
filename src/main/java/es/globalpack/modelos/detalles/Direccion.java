@@ -15,13 +15,16 @@ public class Direccion {
 public Direccion (String calle, String codigoPostal, String ciudad){
     this.calle = calle;
     this.codigoPostal = codigoPostal;
-    this.ciudad = ciudad;   
+    this.ciudad = ciudad;  
 }
 @Override
 public String toString(){
     return calle + "," "+ codigoPostal +" "," " + ciudad";
 }
-public String getciudad(){
-    return ciudad;
+
+    public String getCiudad() {
+        return ciudad;
+    }
+
 }    
-}
+

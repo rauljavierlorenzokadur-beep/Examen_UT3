@@ -48,3 +48,4 @@ public abstract class Envio {
         return Objects.hash(idSeguimiento);
     }
 }
+

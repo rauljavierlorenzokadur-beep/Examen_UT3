@@ -28,7 +28,7 @@ public double calcularPrecioFinal(){
        }
        return precio;
    }
-    @Override 
+    @Override
 public double calcularSeguro(){
     return volumen * 0.03;
     }
